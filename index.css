@@ -124,3 +124,8 @@ nav,
 .generate-btn {
     height: 42px;
 }
+
+/* Utilities */
+.copyable {
+    cursor: pointer;
+}

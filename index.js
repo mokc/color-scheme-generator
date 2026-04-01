@@ -14,6 +14,19 @@ generateBtn.addEventListener('click', () => {
     })
 })
 
+document.addEventListener('click', (e) => {
+    if (e.target.classList.contains('copyable')) {
+        const text = e.target.textContent
+        navigator.clipboard.writeText(text)
+
+        e.target.textContent = 'Copied!'
+
+        setTimeout(() => {
+            e.target.textContent = text
+        }, 800)
+    }
+})
+
 function renderHexes(hexes) {
     console.log(hexes)
     hexes.forEach((hex, idx) => {
