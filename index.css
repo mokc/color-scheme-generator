@@ -2,3 +2,125 @@ html, body {
     margin: 0;
     padding: 0;
 }
+
+/* Typography */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.hex-text {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Colors */
+.color-1 {
+    grid-area: c1;
+    background-color: #F55A5A;
+}
+
+.color-2 {
+    grid-area: c2;
+    background-color: #2B283A;
+}
+
+.color-3 {
+    grid-area: c3;
+    background-color: #FBF3AB;
+}
+
+.color-4 {
+    grid-area: c4;
+    background-color: #AAD1B6;
+}
+
+.color-5 {
+    grid-area: c5;
+    background-color: #A626D3;
+}
+
+/* Layout */
+nav {
+    height: 90px;
+    gap: 1em;
+}
+
+nav,
+.hex-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hex-text {
+    grid-area: ht;
+    background-color: #FFFFFF;
+}
+
+.hex-1 {
+    grid-area: h1;
+}
+
+.hex-2 {
+    grid-area: h2;
+}
+
+.hex-3 {
+    grid-area: h3;
+}
+
+.hex-4 {
+    grid-area: h4;
+}
+
+.hex-5 {
+    grid-area: h5;
+}
+
+.color-scheme {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr) \ repeat(5, 1fr);
+    grid-template-areas: 
+        "c1 c2 c3 c4 c5"
+        "c1 c2 c3 c4 c5"
+        "c1 c2 c3 c4 c5"
+        "c1 c2 c3 c4 c5"
+        "c1 c2 c3 c4 c5"
+        "c1 c2 c3 c4 c5"
+        "c1 c2 c3 c4 c5"
+        "c1 c2 c3 c4 c5"
+        "c1 c2 c3 c4 c5"
+        "c1 c2 c3 c4 c5"
+        "c1 c2 c3 c4 c5"
+        "h1 h2 h3 h4 h5";
+    height: calc(100vh - 90px);
+}
+
+/* Forms / Inputs */
+.mode-select {
+    border-radius: 6px;
+    width: 50%;
+}
+
+.generate-btn {
+    font-size: 1em;
+    font-weight: 500;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+}
+
+.color-picker {
+    border: 0.5px solid #D1D5DB;
+    width: 5%;
+}
+
+.mode-select,
+.generate-btn {
+    border: 1px solid #D1D5DB;
+}
+
+.color-picker,
+.mode-select,
+.generate-btn {
+    height: 42px;
+}
