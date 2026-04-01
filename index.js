@@ -16,11 +16,8 @@ generateBtn.addEventListener('click', () => {
 
 function renderHexes(hexes) {
     console.log(hexes)
-    let colorsHtml = ''
     hexes.forEach((hex, idx) => {
-        colorsHtml += `
-            <div class="color-${idx}"></div>
-        `
+        document.querySelector(`.color-${idx+1}`).style.backgroundColor = hex;
+        document.querySelector(`.hex-${idx+1}`).textContent = hex;
     })
-    document.getElementById('color-scheme').innerHTML = colorsHtml
 }
