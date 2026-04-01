@@ -109,6 +109,11 @@ nav,
     border-radius: 4px;
 }
 
+.generate-btn:active {
+    background-color: slategray;
+    color: snow;
+}
+
 .color-picker {
     border: 0.5px solid #D1D5DB;
     width: 5%;
